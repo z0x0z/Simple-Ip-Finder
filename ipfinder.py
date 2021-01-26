@@ -1,8 +1,3 @@
-#####################################
-#   SIMPLE IP FINDER                #  
-# BY  Game0v3r Aka Kabilan          #
-#          2019                     #
-#####################################
 import pyfiglet
 import os
 import geoip2.database
@@ -12,9 +7,7 @@ import socket
 today = date.today()
 k = today.strftime("%d/%m/%y")
 kabi = pyfiglet.figlet_format("Simple Ip Finder")
-print(kabi)
-print("                      Welcome To Simple IP Finder     " + k)
-print( "                          A Tool By Kabilan")   
+print(kabi)  
 print("1.Find your Ip address\n")
 print("2.Find the Ip Adddress of the Domain\n")
 print("3.Find the Ip Addrress of the list of domains\n")
@@ -22,7 +15,7 @@ print("4.Enumerate Status code\n")
 a=int(input("Enter..............."))
 hostname = socket.gethostname()
 ip = socket.gethostbyname(hostname)
-reader=geoip2.database.Reader('/root/Desktop/Simple-Ip-Finder/GeoLite2-City_20190709/GeoLite2-City.mmdb')
+reader=geoip2.database.Reader('GeoLite2-City.mmdb')
 if (a==1):
     print("Your Computer Name is " +hostname)
     print("Your Computer Ip Address is " + ip)
