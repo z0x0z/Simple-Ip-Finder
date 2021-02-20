@@ -11,7 +11,7 @@
 - socket
 
 # Usage guide
-- Python ipfinder.py
+- python3 ipfinder.py
 
 
 
